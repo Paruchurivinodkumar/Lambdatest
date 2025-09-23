@@ -1,4 +1,4 @@
-platform: "Windows"
+platform: "Windows 10"
 browser: "Chrome"
 browserVersion: "140.0.7339.186"
  
