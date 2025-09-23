@@ -1,0 +1,467 @@
+<html>
+<head>
+<title>TestNG:  LambdaTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LambdaTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 24 01:43:16 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6638 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3.setUp()'><b>setUp</b><br>Test class: lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3<br>Parameters: chrome, 140.0.7339.186, window</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23NRKSVVP3DM8V09MV8-SQ29H-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario3, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario3, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace109704895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace109704895'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23NRKSVVP3DM8V09MV8-SQ29H-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario3, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario3, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>5</td>
+<td>lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3@1ff4931d</td></tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2.setUp()'><b>setUp</b><br>Test class: lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2<br>Parameters: chrome, 140.0.7339.186, window</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23KCQTJ1FNZSH8DX0KP-QL59R-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: Lambdatestscenarios2, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: Lambdatestscenarios2, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace458962748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace458962748'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23KCQTJ1FNZSH8DX0KP-QL59R-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: Lambdatestscenarios2, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: Lambdatestscenarios2, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2@752325ad</td></tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1.setUp()'><b>setUp</b><br>Test class: lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1<br>Parameters: chrome, 140.0.7339.186, window</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23P59Y4R1Z6MB6GMT0T-SQ29H-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario1, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario1, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace273258384", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace273258384'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23P59Y4R1Z6MB6GMT0T-SQ29H-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario1, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario1, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>5</td>
+<td>lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@65e98b1c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2.testClosure()'><b>testClosure</b><br>Test class: lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2</td>
+<td></td>
+<td>0</td>
+<td>lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2@752325ad</td></tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1.testClosure()'><b>testClosure</b><br>Test class: lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1</td>
+<td></td>
+<td>0</td>
+<td>lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@65e98b1c</td></tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3.testClosure()'><b>testClosure</b><br>Test class: lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3</td>
+<td></td>
+<td>0</td>
+<td>lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3@1ff4931d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1.ts01()'><b>ts01</b><br>Test class: lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23P59Y4R1Z6MB6GMT0T-SQ29H-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario1, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario1, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace958269150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace958269150'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23P59Y4R1Z6MB6GMT0T-SQ29H-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario1, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario1, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@65e98b1c</td></tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3.ts3()'><b>ts3</b><br>Test class: lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23NRKSVVP3DM8V09MV8-SQ29H-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario3, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario3, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace168172141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace168172141'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23NRKSVVP3DM8V09MV8-SQ29H-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario3, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: LambdaTestScenario3, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3@1ff4931d</td></tr>
+<tr>
+<td title='lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2.ts02()'><b>ts02</b><br>Test class: lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23KCQTJ1FNZSH8DX0KP-QL59R-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: Lambdatestscenarios2, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: Lambdatestscenarios2, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace694617226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace694617226'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5W3B23KCQTJ1FNZSH8DX0KP-QL59R-AP-SOUTH-1: The capability platform has value window which is not supported. Supported values are [macos 26.0 macos 15.0 macos 14.0 macos 13.0 macos 12.0 macos 11.0 macos 10.15 macos 10.14 macos 10.13 macos 10.12 os x 10.11 os x 10.10 os x 10.9 os x 10.8 win11 win10 win8 win8.1 win7 ubuntu-20] 
+Host info: host: &apos;LIN-5CG5162CM9&apos;, ip: &apos;192.168.1.7&apos;
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: Lambdatestscenarios2, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., browserName: chrome, browserVersion: 140.0.7339.186, build: Lambda_Build_Version _1.0, console: true, name: Lambdatestscenarios2, network: true, platformName: window, project: LambdaTest, username: m-naveen.b.kumar@capgemini.com, video: true, visual: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at lambdaTestTestng.base.BaseClass.setUp(BaseClass.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2@752325ad</td></tr>
+</table><p>
+</body>
+</html>
