@@ -1,6 +1,6 @@
 platform: "Windows 10"
 browser: "Chrome"
-browserVersion: "140.0.7339.186"
+browserVersion: "140.0"
  
 lambdatest:
   user: "<m-naveen.b.kumar@capgemini.com>"
