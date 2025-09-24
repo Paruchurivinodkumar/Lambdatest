@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Suite">
-  <test thread-count="3" parallel="tests" name="Test">
+<suite thread-count="3" parallel="tests" name="Suite">
+  <test  name="Test">
+    <parameter name="platform" value="Windows 10" />
+        <parameter name="browser" value="Chrome" />
+        <parameter name="version" value="142.0" />
     <classes>
       <class name="lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2"/>
       <class name="lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3"/>

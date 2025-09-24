@@ -1,5 +1,7 @@
 package lambdaTestTestng.base;
 
+
+import java.net.URI;
 import java.net.URL;
 import java.util.HashMap;
 
@@ -18,24 +20,23 @@ public class BaseClass {
 	   protected RemoteWebDriver driver;
 	   @Parameters({"browser", "version", "platform"})
 	   @BeforeClass
-	   public void setUp(String browser, String version, String platform) throws Exception {
+	   public void setup(String browser, String version, String platform) throws Exception {
 	       ChromeOptions browserOptions = new ChromeOptions();
+	       browserOptions.setPlatformName(platform);
+	       browserOptions.setBrowserVersion(version);
+	    
 	       HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-	       ltOptions.put("username", "m-naveen.b.kumar@capgemini.com");
-	       ltOptions.put("accessKey", "LT_U9QUwERvCXqr5BD6XD6Xty0R4j6nOyBzb47wCIXqQzoq5VL");
-	       ltOptions.put("visual", true);
-	       ltOptions.put("video", true);
-	       ltOptions.put("build", "Lambda_Build_Version _1.0");
-	       ltOptions.put("project", "LambdaTest");
-	       ltOptions.put("name", this.getClass().getSimpleName());
-	       ltOptions.put("platformName", platform);
-	       ltOptions.put("browserName", browser);
-	       ltOptions.put("browserVersion", version);
-	       ltOptions.put("network", true);
-	       ltOptions.put("console", true);
+	       ltOptions.put("user", "m-naveen.b.kumar@capgemini.com");   
+	       ltOptions.put("accessKey", "LT_U9QUwERvCXqr5BD6XD6Xty0R4j6nOyBzb47wCIXqQzoq5VL"); 
+	       ltOptions.put("project", "Lambdatesting");
+	       ltOptions.put("selenium_version", "4.0.0");
+	       ltOptions.put("w3c", true);
+	    
 	       browserOptions.setCapability("LT:Options", ltOptions);
-	       driver = new RemoteWebDriver(new URL("https://hub.lambdatest.com/wd/hub"), browserOptions);
-	}
+	    
+	       URL url = URI.create("https://hub.lambdatest.com/wd/hub").toURL();
+	        driver = new RemoteWebDriver( url, browserOptions);
+	   }
 
 	@AfterClass
 	public void testClosure() {

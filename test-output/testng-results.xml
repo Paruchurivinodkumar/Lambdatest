@@ -1,97 +1,398 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-24T01:48:08 IST" name="Default suite" finished-at="2025-09-24T01:48:08 IST" duration-ms="402">
+  <suite started-at="2025-09-24T13:40:06 IST" name="Suite" finished-at="2025-09-24T13:40:22 IST" duration-ms="16364">
     <groups>
     </groups>
-    <test started-at="2025-09-24T01:48:08 IST" name="Default test" finished-at="2025-09-24T01:48:08 IST" duration-ms="402">
-      <class name="lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@279fedbd]" started-at="2025-09-24T01:48:08 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1758658688514" status="FAIL">
-          <exception class="org.testng.TestNGException">
+    <test started-at="2025-09-24T13:40:06 IST" name="Test" finished-at="2025-09-24T13:40:22 IST" duration-ms="16364">
+      <class name="lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3@1ff4931d]" started-at="2025-09-24T13:40:11 IST" name="setup" finished-at="2025-09-24T13:40:16 IST" duration-ms="4293" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[142.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\vparuchu\AppData\Local\Temp\testng-eclipse-743317109\testng-customsuite.xml]]>
+              <![CDATA[Could not start a new session. Response code 400. Message: LT01K5XCBQ7EEKVFJKKV2WSF6M98-BSHM2-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\vparuchu\AppData\Local\Temp\testng-eclipse-743317109\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5XCBQ7EEKVFJKKV2WSF6M98-BSHM2-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+at lambdaTestTestng.base.BaseClass.setup(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ts01()[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@279fedbd]" started-at="2025-09-24T01:48:08 IST" name="ts01" finished-at="2025-09-24T01:48:08 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        </test-method> <!-- setup -->
+        <test-method signature="ts3()[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3@1ff4931d]" started-at="2025-09-24T13:40:16 IST" name="ts3" finished-at="2025-09-24T13:40:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\vparuchu\AppData\Local\Temp\testng-eclipse-743317109\testng-customsuite.xml]]>
+              <![CDATA[Could not start a new session. Response code 400. Message: LT01K5XCBQ7EEKVFJKKV2WSF6M98-BSHM2-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\vparuchu\AppData\Local\Temp\testng-eclipse-743317109\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5XCBQ7EEKVFJKKV2WSF6M98-BSHM2-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+at lambdaTestTestng.base.BaseClass.setup(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ts3 -->
+        <test-method is-config="true" signature="testClosure()[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3@1ff4931d]" started-at="2025-09-24T13:40:16 IST" name="testClosure" finished-at="2025-09-24T13:40:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClosure -->
+      </class> <!-- lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3 -->
+      <class name="lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@65e98b1c]" started-at="2025-09-24T13:40:16 IST" name="setup" finished-at="2025-09-24T13:40:22 IST" duration-ms="6089" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[142.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 400. Message: LT01K5XCBVEAKTXH7RH3JZQH9G6S-HKKJH-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5XCBVEAKTXH7RH3JZQH9G6S-HKKJH-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+at lambdaTestTestng.base.BaseClass.setup(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ts01()[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@65e98b1c]" started-at="2025-09-24T13:40:22 IST" name="ts01" finished-at="2025-09-24T13:40:22 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 400. Message: LT01K5XCBVEAKTXH7RH3JZQH9G6S-HKKJH-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5XCBVEAKTXH7RH3JZQH9G6S-HKKJH-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+at lambdaTestTestng.base.BaseClass.setup(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ts01 -->
-        <test-method is-config="true" signature="testClosure()[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@279fedbd]" started-at="2025-09-24T01:48:08 IST" name="testClosure" finished-at="2025-09-24T01:48:08 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="testClosure()[pri:0, instance:lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1@65e98b1c]" started-at="2025-09-24T13:40:22 IST" name="testClosure" finished-at="2025-09-24T13:40:22 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClosure -->
       </class> <!-- lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2@752325ad]" started-at="2025-09-24T13:40:06 IST" name="setup" finished-at="2025-09-24T13:40:11 IST" duration-ms="5865" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[142.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 400. Message: LT01K5XCBJQJZ8G7D07ZNC99V73P-QL59R-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5XCBJQJZ8G7D07ZNC99V73P-QL59R-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+at lambdaTestTestng.base.BaseClass.setup(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ts02()[pri:0, instance:lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2@752325ad]" started-at="2025-09-24T13:40:11 IST" name="ts02" finished-at="2025-09-24T13:40:11 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 400. Message: LT01K5XCBJQJZ8G7D07ZNC99V73P-QL59R-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: LT01K5XCBJQJZ8G7D07ZNC99V73P-QL59R-AP-SOUTH-1: Error: Could not find a valid browserVersionData. config received, osVersion: win10 browserName: chrome browserVersion: 142.0 Input capabilities : {"DisableXFHeaders":true,"accessKey":"**************************************************","browserName":"chrome","build":"Untitled","console":"false","enableNetworkThrottling":false,"extendedDebuging":true,"goog:chromeOptions":{"args":[],"extensions":["User Defined Extensions"]},"headless":false,"hubVersion":"v3.1.9-merger","isRealMobile":false,"jwp":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","project":"Lambdatesting","selenium_version":"4.0.0","user":"******************************","w3c":true},"mode":"cloud","network":false,"performance":false,"platform":"win10","platformName":"win10","projectName":"Lambdatesting","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"******************************","userAgent":"selenium/4.34.0 (java windows)","verboseWebDriverLogging":false,"version":"142.0","video":true,"visual":false,"w3c":true,"webdriverMode":true} 
+Host info: host: 'LIN-5CG5162CM9', ip: '192.168.1.7'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}]}]
+Capabilities {LT:Options: {accessKey: LT_U9QUwERvCXqr5BD6XD6Xty0R..., project: Lambdatesting, selenium_version: 4.0.0, user: m-naveen.b.kumar@capgemini.com, w3c: true}, browserName: chrome, browserVersion: 142.0, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 10}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+at lambdaTestTestng.base.BaseClass.setup(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ts02 -->
+        <test-method is-config="true" signature="testClosure()[pri:0, instance:lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2@752325ad]" started-at="2025-09-24T13:40:11 IST" name="testClosure" finished-at="2025-09-24T13:40:11 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClosure -->
+      </class> <!-- lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

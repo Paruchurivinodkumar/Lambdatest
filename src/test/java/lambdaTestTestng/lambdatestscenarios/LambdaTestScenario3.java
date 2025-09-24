@@ -1,5 +1,7 @@
 package lambdaTestTestng.lambdatestscenarios;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -67,7 +69,7 @@ public void ts3() throws IOException {
 
   String validationMessage = driver.findElement(By.name("name")).getAttribute("validationMessage");
 
-  Assert.assertEquals(validationMessage, "Please fill out this field.");
+  AssertJUnit.assertEquals(validationMessage, "Please fill out this field.");
 
   WebElement nam= driver.findElement(By.id("name"));
 

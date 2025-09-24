@@ -1,6 +1,6 @@
-platform: "Windows"
+platform: "Windows 10"
 browser: "Chrome"
-browserVersion: "140.0.7339.186"
+browserVersion: "140.0"
  
 lambdatest:
   user: "<m-naveen.b.kumar@capgemini.com>"
@@ -8,9 +8,9 @@ lambdatest:
   seleniumHub: "http://hub.lambdatest.com/wd/hub"
  
 testSuites:
-  - name: LambdaTest
+  - name: Lambdatesting
     classes:
-      - LambdaTestTesting.Lambdatestscenarios.LambdatestScenarios2
-      - LambdaTestTesting.Lambdatestscenarios.LambdatestScenarios3
-      - LambdaTestTesting.Lambdatestscenarios.LambdatestScenario1
+      - Lambdatesting.Lambdatestscenarios.Lambdatestscenarios2
+      - Lambdatesting.Lambdatestscenarios.LambdatestScenario3
+      - Lambdatesting.Lambdatestscenarios.LambdatestScenario1
  
