@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LambdaTestSuite" parallel="classes" thread-count="5">
+  <test name="ChromeTest">
+    <parameter name="os" value="window"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="web"/>
+    <classes>
+      <class name="lambdaTestTestng.lambdatestscenarios.LambdaTestScenario1"/>
+      <class name="lambdaTestTestng.lambdatestscenarios.Lambdatestscenarios2"/>
+      <class name="lambdaTestTestng.lambdatestscenarios.LambdaTestScenario3"/>
+    </classes>
+  </test>
+</suite>
